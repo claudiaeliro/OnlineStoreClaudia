@@ -7,7 +7,7 @@ public class OnlineStore {
 
     public static void main(String[] args) {
 
-        ListaArticulos modeloListaArticulos= new ListaArticulos();
+      /*  ListaArticulos modeloListaArticulos= new ListaArticulos();
         ListaPedidos modeloListaPedidos= new ListaPedidos();
         ListaClientes modelListaClientes= new ListaClientes();
         Articulo modelArticulo = new Articulo();
@@ -18,7 +18,14 @@ public class OnlineStore {
         OnlineStoreView view= new OnlineStoreView() ;
         OnlineStoreContoller con = new OnlineStoreContoller(modeloListaArticulos,  modeloListaPedidos, modelListaClientes,modelArticulo, modelClienteEstadard, modelClientePremium,modelPedido,view);
 
-        con.menuInicio();
+        con.menuInicio();*/
+        Datos modeloDatos= new Datos();
+        OnlineStoreView2 view= new OnlineStoreView2();
+        OnlineStoreController2 con = new OnlineStoreController2(modeloDatos,view);
+        con.menuInicio2();
+
+
+
 
 
 
