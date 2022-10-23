@@ -14,21 +14,17 @@ public class ListaArticulos {
         this.articulos = new ArrayList<>();
     }
 
-    public ArrayList<Articulo> getArticulos()
-    {
+    public ArrayList<Articulo> getArticulos() {
         return articulos;
     }
-    public void setArticulos(Articulo articulo)
-    {
+
+    public void setArticulos(Articulo articulo) {
         articulos.add(articulo);
     }
 
-    public boolean comprobarArticulo(String codigo)
-    {
-        for(Articulo articulo: this.getArticulos())
-        {
-            if (articulo.getCodigo().equals(codigo))
-            {
+    public boolean comprobarArticulo(String codigo) {
+        for (Articulo articulo : this.getArticulos()) {
+            if (articulo.getCodigo().equals(codigo)) {
                 return true;
             }
         }
